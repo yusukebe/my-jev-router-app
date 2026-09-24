@@ -6,7 +6,8 @@ const app = new Hono<{ Bindings: CloudflareBindings }>({
     run: async (c, request) => {
       const { result } = await c.env.AI.run('typesafe/jev', request)
       return result
-    }
+    },
+    threshold: 0.8
   })
 })
 
