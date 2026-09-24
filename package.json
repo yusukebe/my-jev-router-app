@@ -1,0 +1,17 @@
+{
+  "name": "my-jev-router-app",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify",
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
+  },
+  "dependencies": {
+    "hono": "^4.13.8",
+    "hono-jev-router": "^0.2.0"
+  },
+  "devDependencies": {
+    "@hono/cli": "0.2.0-next.9",
+    "wrangler": "^4.110.0"
+  }
+}
